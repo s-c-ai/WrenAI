@@ -29,7 +29,7 @@ const Wrapper = ({ children }) => {
     >
       <Logo />
       <div className="text-md text-medium gray-8 mt-3">
-        Know more about your data
+        Protheus RH
       </div>
       {children}
     </div>
