@@ -28,9 +28,7 @@ const Wrapper = ({ children }) => {
       style={{ height: '100%' }}
     >
       <Logo />
-      <div className="text-md text-medium gray-8 mt-3">
-        Protheus RH
-      </div>
+      <div className="text-md text-medium gray-8 mt-3">Protheus RH</div>
       {children}
     </div>
   );
