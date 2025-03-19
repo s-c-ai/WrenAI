@@ -9,6 +9,9 @@
   --color-light-yellow: #efeed3;
   --color-dark-blue: #2d3b52;
   --color-gray: #595959;
+  --color-green: oklch(0.527 0.154 150.069);
+  --color-red: oklch(0.505 0.213 27.518);
+
 }
 
 html {
