@@ -15,13 +15,13 @@
   <button
     {...props}
     {onclick}
-    class="min-w-15 text-gray p-3 cursor-pointer text-2xl font-bold"
+    class="text-gray cursor-pointer text-2xl font-bold"
     >{@render children()}</button
   >
 {:else}
   <button
     {...props}
-    class="w-full flex gap-x-3 justify-center px-3 py-2 cursor-pointer bg-primary rounded-2xl text-light-yellow text-2xl font-bold shadow-xl"
+    class="w-full flex gap-x-3 justify-center items-center px-3 py-2 cursor-pointer bg-primary rounded-2xl text-light-yellow text-2xl font-bold shadow-xl"
     {onclick}
   >
     {@render children()}
