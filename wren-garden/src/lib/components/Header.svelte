@@ -28,6 +28,6 @@
 
 <style>
   .header-container {
-    border-bottom: 1px solid rgba(0.89, 0.89, 0.89, 0.2);
+    border-bottom: 1px solid rgba(89, 89, 89, 0.2);
   }
 </style>
