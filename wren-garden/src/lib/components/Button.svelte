@@ -21,7 +21,7 @@
 {:else}
   <button
     {...props}
-    class="w-full flex gap-x-3 justify-center px-3 py-2 cursor-pointer bg-primary rounded-2xl text-light-yellow text-2xl font-bold"
+    class="w-full flex gap-x-3 justify-center px-3 py-2 cursor-pointer bg-primary rounded-2xl text-light-yellow text-2xl font-bold shadow-xl"
     {onclick}
   >
     {@render children()}
