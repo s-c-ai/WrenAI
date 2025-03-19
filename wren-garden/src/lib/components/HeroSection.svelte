@@ -4,8 +4,10 @@
 </script>
 
 <section class="flex flex-col h-screen sm:px-14">
-  <div class="flex w-full h-full items-center justify-between">
-    <div class="flex flex-col w-9/20">
+  <div
+    class="flex flex-col sm:flex-row w-full h-full items-center justify-between"
+  >
+    <div class="hidden lg:flex lg:flex-col lg:w-9/20">
       <h1 class="text-dark-blue font-bold text-5xl mb-6">
         Intelligent, Efficient and <br />Productive
       </h1>
@@ -13,7 +15,7 @@
         An AI Applications Hub
       </h2>
     </div>
-    <div class="w-9/20 h-3/4"><AuthForm /></div>
+    <div class="lg:w-9/20 lg:h-3/4"><AuthForm /></div>
   </div>
   <div
     class="flex w-full justify-center gap-10 fixed bottom-0 mb-10 sm:justify-start"
