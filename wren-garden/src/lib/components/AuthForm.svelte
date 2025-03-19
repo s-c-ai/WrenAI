@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { goto } from "$app/navigation";
   import logoImage from "$assets/logo-with-text.svg";
   import { Button } from "$components";
 
@@ -22,11 +23,7 @@
     </h1>
     <h2 class="text-dark-blue font-medium text-2xl mb-10">Welcome back!</h2>
   {/if}
-  <form
-    action=""
-    method="POST"
-    class="auth-form flex flex-col w-full h-full items-start"
-  >
+  <form action="" class="auth-form flex flex-col w-full h-full items-start">
     <input type="text" placeholder="Email" name="email" />
     <input type="password" placeholder="Password" name="password" />
     {#if isRegistration}
@@ -36,25 +33,27 @@
         name="passwordConfirm"
       />
     {/if}
-    <div class="w-full text-center">
-      <Button>{isRegistration ? "Sign up" : "Login"}</Button>
-    </div>
-    {#if isRegistration}
-      <p class="text-dark-blue text-xs mt-6">
-        Already have an account? <button
-          class="text-primary font-bold text-xs cursor-pointer"
-          onclick={toogleRegistration}>Sign in</button
-        >
-      </p>
-    {:else}
-      <p class="text-dark-blue text-xs mt-6">
-        Don't have an account? <button
-          class="text-primary font-bold text-xs cursor-pointer"
-          onclick={toogleRegistration}>Sign up</button
-        >
-      </p>
-    {/if}
   </form>
+  <Button
+    onclick={() => {
+      goto("/dashboard");
+    }}>{isRegistration ? "Sign up" : "Login"}</Button
+  >
+  {#if isRegistration}
+    <p class="text-dark-blue text-xs mt-6">
+      Already have an account? <button
+        class="text-primary font-bold text-xs cursor-pointer"
+        onclick={toogleRegistration}>Sign in</button
+      >
+    </p>
+  {:else}
+    <p class="text-dark-blue text-xs mt-6">
+      Don't have an account? <button
+        class="text-primary font-bold text-xs cursor-pointer"
+        onclick={toogleRegistration}>Sign up</button
+      >
+    </p>
+  {/if}
 </div>
 
 <style>
