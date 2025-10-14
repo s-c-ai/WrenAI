@@ -1,14 +1,14 @@
 <script lang="ts">
   import Icon from "@iconify/svelte";
 
-  import logoImage from "$assets/logo-with-text.svg";
+  import logoImage from "$assets/LogoClaro.png";
   import { LoginButton } from "$components";
 </script>
 
 <div
   class="px-15 py-31 auth-border flex flex-col justify-center w-full h-full items-center md:items-start"
 >
-  <img src={logoImage} alt="" class="mb-10 w-100 h-20" />
+  <img src={logoImage} alt="" class="mb-10 w-75 h-25" />
   <h1 class="text-center md:text-start text-dark-blue font-bold text-5xl mb-6">
     Log in to your account
   </h1>
